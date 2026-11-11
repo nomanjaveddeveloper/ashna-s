@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ur-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday Ashna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbeee9; --bg2:#f3b2a8; --ink:#79264d; --soft:#7d4a5e; --rose:#c9566f; --gold:#c79043; --card:#fff8f5; --line:#e7c4c0;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#2a1220; --bg2:#3a1a2c; --ink:#f7e3e0; --soft:#d69bab; --rose:#ee8aa0; --gold:#d9b06a; --card:#35172a; --line:#5a2d45; color-scheme:dark;}
+}
+:root[data-theme="dark"]{--bg:#2a1220; --bg2:#3a1a2c; --ink:#f5ccc6; --soft:#d495a6; --rose:#ee8aa0; --gold:#d9b06a; --card:#35172a; --line:#5a2d45; color-scheme:dark;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cormorant Garamond',Georgia,serif;font-size:1.25rem;line-height:1.75;overflow-x:hidden}
+.hero{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2rem 1.25rem 3rem;background:radial-gradient(ellipse at 50% 30%,var(--bg2),var(--bg) 70%)}
+.hero p.pre{font-family:'Jost',sans-serif;font-weight:300;letter-spacing:.08em;color:var(--soft);margin:0 0 .25rem;font-size:1rem}
+h1{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(3.2rem,12vw,6.5rem);line-height:1.05;margin:0;color:var(--rose)}
+.hero .sub{font-style:italic;color:var(--soft);margin:.5rem 0 0;font-size:1.3rem}
+svg.bq{width:min(88vw,430px);filter:drop-shadow(0 20px 30px rgba(201,86,111,.3));height:auto;margin:.5rem 0 0;overflow:visible}
+.stem{fill:none;stroke:#5f8a5e;stroke-width:3.5;stroke-linecap:round;stroke-dasharray:300;stroke-dashoffset:300;animation:grow 1.4s ease-out forwards}
+.leaf{fill:#6e9c6b;opacity:0;animation:fade .8s ease-out 1.2s forwards}
+.f{transform-box:fill-box;transform-origin:center;transform:scale(0);animation:bloom 1.2s cubic-bezier(.2,1.3,.4,1) forwards;animation-delay:var(--d)}
+.wrap{opacity:0;animation:fade .8s ease-out 1.9s forwards}
+@keyframes grow{to{stroke-dashoffset:0}}
+@keyframes fade{to{opacity:1}}
+@keyframes bloom{to{transform:scale(1)}}
+.cue{margin-top:1.2rem;font-family:'Jost',sans-serif;font-weight:300;font-size:.95rem;color:var(--soft);opacity:0;animation:fade 1s ease-out 2.6s forwards}
+.letter{max-width:40rem;margin:0 auto;padding:3rem 1.4rem 1rem}
+.letter h2{font-family:'Great Vibes',cursive;font-weight:400;font-size:2.3rem;color:var(--rose);margin:2.6rem 0 .2rem;line-height:1.2}
+.letter p{margin:0 0 1rem;hyphens:auto}
+.letter p:first-of-type::first-letter{font-size:3.4rem;float:left;line-height:.9;padding:.35rem .5rem 0 0;color:var(--rose);font-weight:500}
+.sprig{display:block;margin:2.2rem auto 0;width:120px;color:var(--gold)}
+.finale{margin:3rem 1.25rem;padding:3rem 1.5rem;text-align:center;background:var(--card);border:1px solid var(--line);border-radius:2rem 2rem 6rem 6rem/2rem 2rem 4rem 4rem;max-width:40rem;margin-inline:auto}
+.finale h2{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(2.6rem,9vw,4rem);color:var(--rose);margin:0 0 .5rem;line-height:1.1}
+.finale p{margin:0 auto 1.5rem;max-width:30rem;color:var(--soft)}
+button{font:inherit;font-family:'Jost',sans-serif;font-size:1rem;letter-spacing:.03em;background:var(--rose);color:#fff;border:0;border-radius:999px;padding:.9rem 2rem;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 6px 18px rgba(201,86,111,.35)}
+button:hover{transform:translateY(-2px)}
+button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+footer{text-align:center;padding:2rem 1rem 3rem;color:var(--soft);font-style:italic}
+.petal{position:fixed;top:-30px;width:14px;height:18px;border-radius:70% 0 70% 0;pointer-events:none;z-index:50;animation:fall linear forwards}
+@keyframes fall{to{transform:translate(var(--x),110vh) rotate(var(--r))}}
+@media (prefers-reduced-motion:reduce){
+  .stem{animation:none;stroke-dashoffset:0}.leaf,.wrap,.cue{animation:none;opacity:1}.f{animation:none;transform:none}.petal{display:none}
+}
+body.locked{overflow:hidden;height:100vh}
+body.locked .stem,body.locked .f,body.locked .leaf,body.locked .wrap,body.locked .cue{animation-play-state:paused}
+.bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--rose),var(--gold));z-index:60}
+.hero{position:relative;overflow:hidden}.hero>*{position:relative;z-index:1}
+.hero::before,.hero::after{content:"";position:absolute;width:44vmax;height:44vmax;border-radius:50%;filter:blur(80px);opacity:.55;z-index:0;animation:drift 14s ease-in-out infinite alternate}
+.hero::before{background:#f4a9b8;top:-14vmax;left:-12vmax}.hero::after{background:#f3d3a0;bottom:-16vmax;right:-12vmax;animation-delay:-6s}
+@keyframes drift{to{transform:translate(6vmax,5vmax) scale(1.15)}}
+h1{padding:.05em .1em .15em;background:linear-gradient(100deg,#c9566f,#b98a4a,#e58aa0,#c9566f);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 6s linear infinite}
+@keyframes sh{to{background-position:250% 0}}
+.env{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#f9d9d6,#e9a9b6);text-align:center;transition:opacity 1s,transform 1s}
+.env.gone{opacity:0;transform:scale(1.15);pointer-events:none}
+.ec{width:min(82vw,340px);aspect-ratio:3/2;background:#fff6f1;border-radius:14px;position:relative;box-shadow:0 30px 60px -20px rgba(120,30,60,.5);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:1rem;color:#7a2c44;margin:0 auto}
+.ec::before{content:"";position:absolute;inset:0;background:#f4d3cf;clip-path:polygon(0 0,100% 0,50% 58%);border-radius:14px}
+.seal{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);width:54px;height:54px;border-radius:50%;background:#c23f61;color:#fff;display:grid;place-items:center;font-size:1.5rem;box-shadow:0 4px 10px rgba(0,0,0,.3);animation:beat 1.4s infinite}
+@keyframes beat{50%{transform:translate(-50%,-50%) scale(1.14)}}
+.ec p{font-family:'Great Vibes',cursive;font-size:2.1rem;margin:0}
+#open{margin-top:1.8rem}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:1.6rem;padding:1.6rem 1.6rem .9rem;margin:0 0 2rem;box-shadow:0 18px 40px -22px rgba(201,86,111,.5);opacity:0;transform:translateY(34px);transition:opacity .9s,transform .9s}
+.card.in{opacity:1;transform:none}
+.card:nth-child(odd){margin-right:1.6rem}.card:nth-child(even){margin-left:1.6rem}
+.card::after{content:"\273F";position:absolute;top:.7rem;right:1.1rem;font-size:1.8rem;color:var(--rose);opacity:.35}
+.card h2{margin-top:0}
+@media (max-width:520px){.card:nth-child(odd){margin-right:.3rem}.card:nth-child(even){margin-left:.3rem}}
+.reasons h2{font-family:'Great Vibes',cursive;font-weight:400;text-align:center;font-size:2.8rem;color:var(--rose);margin:3rem 0 .2rem}
+.reasons .t{text-align:center;color:var(--soft);font-style:italic;margin:0 0 1.5rem}
+.rg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem;max-width:44rem;margin:0 auto;padding:0 1.25rem}
+.fc{perspective:900px;background:none;box-shadow:none;padding:0;height:170px;color:inherit;border-radius:1.2rem;font-family:'Cormorant Garamond',Georgia,serif;letter-spacing:0}
+.fi{position:relative;display:block;width:100%;height:100%;transition:transform .7s;transform-style:preserve-3d}
+.fc.flip .fi{transform:rotateY(180deg)}
+.fi>span{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:1.2rem;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:1rem;font-size:1.1rem;line-height:1.35}
+.fr{background:linear-gradient(145deg,#e58aa0,#c23f61);color:#fff;font-size:1.3rem!important}
+.bk{background:var(--card);border:1px solid var(--line);transform:rotateY(180deg);color:var(--ink)}
+@media (prefers-reduced-motion:reduce){h1{animation:none}.card{opacity:1;transform:none}.hero::before,.hero::after,.seal{animation:none}}
+</style>
+</head>
+<body class="locked">
+<div class="bar" id="bar"></div>
+<div class="env" id="env"><div><div class="ec"><span class="seal">&#10084;</span><p>Meri Ashna ke naam</p></div><button id="open" type="button">Khat kholo</button></div></div>
+<header class="hero">
+  <p class="pre">Meri jawn ke liye</p>
+  <h1>Happy Birthday, Biyaaa..</h1>
+  <svg class="bq" viewBox="0 0 400 440" role="img" aria-label="Phoolon ka khoobsurat guldasta">
+    <defs>
+      <g id="bloom">
+        <g fill="currentColor">
+          <ellipse cy="-26" rx="13" ry="26"/><ellipse cy="-26" rx="13" ry="26" transform="rotate(45)"/>
+          <ellipse cy="-26" rx="13" ry="26" transform="rotate(90)"/><ellipse cy="-26" rx="13" ry="26" transform="rotate(135)"/>
+          <ellipse cy="-26" rx="13" ry="26" transform="rotate(180)"/><ellipse cy="-26" rx="13" ry="26" transform="rotate(225)"/>
+          <ellipse cy="-26" rx="13" ry="26" transform="rotate(270)"/><ellipse cy="-26" rx="13" ry="26" transform="rotate(315)"/>
+        </g>
+        <g fill="#fff" fill-opacity=".28" stroke="#fff" stroke-opacity=".5" stroke-width="1">
+          <ellipse cy="-14" rx="9" ry="15" transform="rotate(22)"/><ellipse cy="-14" rx="9" ry="15" transform="rotate(94)"/>
+          <ellipse cy="-14" rx="9" ry="15" transform="rotate(166)"/><ellipse cy="-14" rx="9" ry="15" transform="rotate(238)"/>
+          <ellipse cy="-14" rx="9" ry="15" transform="rotate(310)"/>
+        </g>
+        <circle r="7" fill="#000" fill-opacity=".22"/>
+      </g>
+    </defs>
+    <path class="stem" style="animation-delay:.1s" d="M200 400 C200 330 120 280 100 190"/>
+    <path class="stem" style="animation-delay:.2s" d="M200 400 C200 320 200 240 200 120"/>
+    <path class="stem" style="animation-delay:.3s" d="M200 400 C200 330 280 280 300 190"/>
+    <path class="stem" style="animation-delay:.4s" d="M200 400 C190 340 150 300 150 240"/>
+    <path class="stem" style="animation-delay:.5s" d="M200 400 C210 340 250 300 250 240"/>
+    <ellipse class="leaf" cx="150" cy="300" rx="30" ry="11" transform="rotate(-35 150 300)"/>
+    <ellipse class="leaf" cx="252" cy="300" rx="30" ry="11" transform="rotate(35 252 300)"/>
+    <ellipse class="leaf" cx="165" cy="350" rx="34" ry="12" transform="rotate(-18 165 350)"/>
+    <ellipse class="leaf" cx="238" cy="350" rx="34" ry="12" transform="rotate(18 238 350)"/>
+    <g transform="translate(100 180) scale(.95)"><g class="f" style="--d:.9s"><use href="#bloom" style="color:#e6708d"/></g></g>
+    <g transform="translate(300 180) scale(.95)"><g class="f" style="--d:1.05s"><use href="#bloom" style="color:#bb6172"/></g></g>
+    <g transform="translate(150 235) scale(.8)"><g class="f" style="--d:1.2s"><use href="#bloom" style="color:#d4415e"/></g></g>
+    <g transform="translate(250 235) scale(.8)"><g class="f" style="--d:1.3s"><use href="#bloom" style="color:#e69b73"/></g></g>
+    <g transform="translate(200 110) scale(1.15)"><g class="f" style="--d:1.45s"><use href="#bloom" style="color:#c0395d"/></g></g>
+    <path d="M118 372 L200 420 L282 372 L262 340 L138 340 Z" fill="#f4d9d3" stroke="#b98a4a" stroke-width="1.5"/>
+    <path d="M200 420 L150 350 M200 420 L250 350" stroke="#b98a4a" stroke-width="1" opacity=".5" fill="none"/>
+    <g class="wrap" fill="#c9566f"><path d="M200 372 C170 350 150 380 170 392 C185 398 196 384 200 372 Z"/><path d="M200 372 C230 350 250 380 230 392 C215 398 204 384 200 372 Z"/><circle cx="200" cy="374" r="8"/></g>
+  </svg>
+  <p class="sub">Aaj ka din sirf tumhara hai</p>
+  <p class="cue">Neeche scroll karo, dil ki baatein tumhare liye &#8595;</p>
+</header>
+
+<main class="letter">
+  <h2>Meri Moti biyaaa..</h2>
+  <p>Aaj tumhari salgirah hai, aur mere liye yeh din kisi tyohar se kam nahi. Is duniya mein lakhon log hain, lekin mujhe tum mili, aur yeh meri zindagi ki sab se khoobsurat baat hai. Aaj main tumhe woh sab batana chahta hoon jo shayad main roz kehna bhool jata hoon.</p>
+
+  <h2>Pehli Nazar</h2>
+  <p>Jab maine tumhe pehli baar dekha tha, mujhe nahi pata tha ke yeh chehra meri zindagi ka sab se pyara hissa ban jayega. Tumhari muskurahat mein ek sukoon tha, jaise barish ke baad ki pehli khushbu. Us din se mera dil tumhara ho gaya.</p>
+
+  <h2>Tumhari Muskurahat</h2>
+  <p>Tumhari hansi mere zindagi ki sab se haseen awaaz hai. Jab tum muskurati ho to thakan, fikar aur har pareshani peeche reh jati hai. Agar mujhe koi ek cheez hamesha ke liye dekhni ho, to wo tumhari muskurahat hogi.</p>
+
+  <h2>Tumhara Pyar</h2>
+  <p>Tum bina kuch kahe meri har baat samajh jati ho. Meri khamoshi mein bhi tum mera haal parh leti ho. Tumhara pyar shor nahi karta, woh dheere se dil mein utar jata hai aur wahin ghar bana leta hai.</p>
+
+  <h2>Mera Sukoon</h2>
+  <p>Din bhar ki bhaag daud ke baad jab main ghar aata hoon, to tum meri manzil ho. Tumhare paas baith kar mujhe lagta hai ke saari duniya ruk gayi hai. Tum meri thakan ki dawa ho aur meri raaton ka chain.</p>
+
+  <h2>Tumhari Qurbaniyan</h2>
+  <p>Mujhe pata hai ke tumne meri khushi ke liye kitni baar apni khwahishon ko peeche rakha. Tumne kabhi jataya nahi, kabhi shikayat nahi ki. Main tumhara shukar guzar hoon, aur dil se kehta hoon ke main tumhari har kurbani ki qadar karta hoon.</p>
+
+  <h2>Hamari Yaadein</h2>
+  <p>Hamari choti choti baatein, woh hansi mazaaq, woh saath ki chai, woh bina wajah ki batein, yehi meri sab se qeemti doulat hain. Har yaad ek phool ki tarah hai jo mere dil ke guldaste mein hamesha taza rehta hai.</p>
+
+  <h2>Mushkil Waqt Mein</h2>
+  <p>Jab bhi zindagi ne mujhe aazmaya, tum meri himmat ban kar mere saath khadi rahi. Tumhara ek jumla, ek nazar, meri saari himmat wapas laa deti hai. Tum sirf meri biwi nahi, meri sab se achhi dost bhi ho.</p>
+
+  <h2>Tumhari Khoobsurti</h2>
+  <p>Tum sirf chehre se hi nahi, apne dil, apne akhlaq aur apni narmi se bhi bohot khoobsurat ho. Tumhari aankhon mein woh chamak hai jo mujhe har din tumse naye sire se pyar karne par majboor kar deti hai.</p>
+
+  <h2>Mera Wada</h2>
+  <p>Main tumse wada karta hoon ke tumhari muskurahat ki hifazat karunga. Tumhari baat sununga, tumhara khayal rakhunga, aur har mushkil mein tumhara haath thaame rakhunga. Tum meri zimmedari nahi, meri sab se badi khushi ho.</p>
+
+  <h2>Tumhare Liye Dua</h2>
+  <p>Allah tumhe sehat, khushiyan aur lambi umar ata farmaye. Tumhari har dua qabool ho, tumhare har khwab ko manzil mile. Tumhara har din phoolon ki tarah mehakta rahe, aur tumhara har lamha roshan ho.</p>
+
+  <h2>Hamara Aane Wala Kal</h2>
+  <p>Main ek aisi zindagi dekhta hoon jahan hum dono saath boorhe hon, purani yaadon par hanste hon, aur ek doosre ka haath thame hon. Tumhare bina us khwab ka koi matlab nahi. Tum hi meri kahani ho aur tum hi uska sab se haseen mod.</p>
+
+  <svg class="sprig" viewBox="0 0 120 30" aria-hidden="true"><path d="M5 15 H48 M72 15 H115" stroke="currentColor" stroke-width="1" fill="none"/><circle cx="60" cy="15" r="5" fill="none" stroke="currentColor"/><circle cx="60" cy="15" r="1.6" fill="currentColor"/></svg>
+</main>
+
+<section class="reasons"><h2>Tumse pyar kyun hai</h2><p class="t">Har phool ko chhoo kar dekho</p><div class="rg" id="rg"></div></section>
+<section class="finale">
+  <h2>Happy Birthday, Meri katto</h2>
+  <p>Tum meri duniya ho, meri matto. Aaj ka din, aur har aane wala din, tumhari khushi ke naam. Main tumse bohot bohot pyar karta hoon.</p>
+  <button id="go" type="button">Tumhare liye phool</button>
+</section>
+<footer>Hamesha tumhara, sirf tumhara</footer>
+
+<script>
+(function(){
+  var cols=['#e58aa0','#f2a7b5','#d9546f','#f6c3a8','#c23f61','#f9d5da'];
+  var btn=document.getElementById('go');
+  var rm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function pet(amb){var p=document.createElement('span');p.className='petal';p.style.left=(Math.random()*100)+'vw';p.style.background=cols[Math.floor(Math.random()*cols.length)];p.style.setProperty('--x',((Math.random()*160)-80)+'px');p.style.setProperty('--r',(Math.random()*720)+'deg');if(amb){p.style.opacity='.65';p.style.transform='scale(.8)';p.style.animationDuration=(9+Math.random()*6)+'s'}else{p.style.animationDuration=(4+Math.random()*4)+'s'}document.body.appendChild(p);setTimeout(function(){p.remove()},16000)}
+  document.getElementById('open').addEventListener('click',function(){document.getElementById('env').classList.add('gone');document.body.classList.remove('locked');if(!rm){setInterval(function(){if(!document.hidden)pet(true)},1100)}});
+  var L=document.querySelector('.letter');
+  [].slice.call(L.querySelectorAll('h2')).forEach(function(h){var a=document.createElement('article');a.className='card';h.parentNode.insertBefore(a,h);a.appendChild(h);a.appendChild(a.nextElementSibling)});
+  var R=[['Tumhari Hansi','Tumhari hansi sunte hi meri saari thakan utar jati hai.'],['biya ke dudu','meri biya ke dudu itne golo golo moty moty mai tu fida hun or nipples kali kali hyee hyee.'],['biya ki shushu','meri biya ki kali kali shushu tu mera sakoonn haii ummah.'],['biya ka sinaa','Meri biya ka sina tu inna softy softy mai tu purani raat uspy laita rahonga or chumta rahonga.'],['biya ke hips','meri biya k hips tu boht golo golo moty moty hn mujhe boht pasand hnn.'],['meri biya ke gaal','meri biya ke gaal moty moty mujhe boht pasand hn or jab video mai hasti hai or acanak shy sina upr krti hai tu hyee hyee .']];
+  var rg=document.getElementById('rg');
+  R.forEach(function(r){var b=document.createElement('button');b.type='button';b.className='fc';b.innerHTML='<span class="fi"><span class="fr"><span style="font-size:2rem">&#10047;</span>'+r[0]+'</span><span class="bk">'+r[1]+'</span></span>';b.addEventListener('click',function(){b.classList.toggle('flip')});rg.appendChild(b)});
+  var cs=document.querySelectorAll('.card');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});cs.forEach(function(c){io.observe(c)})}else{cs.forEach(function(c){c.classList.add('in')})}
+  window.addEventListener('scroll',function(){var h=document.documentElement;document.getElementById('bar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+  btn.addEventListener('click',function(){
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    for(var i=0;i<60;i++){
+      var p=document.createElement('span');
+      p.className='petal';
+      p.style.left=(Math.random()*100)+'vw';
+      p.style.background=cols[i%cols.length];
+      p.style.setProperty('--x',((Math.random()*160)-80)+'px');
+      p.style.setProperty('--r',(Math.random()*720)+'deg');
+      p.style.animationDuration=(4+Math.random()*4)+'s';
+      p.style.animationDelay=(Math.random()*1.5)+'s';
+      document.body.appendChild(p);
+      (function(el){setTimeout(function(){el.remove()},10000)})(p);
+    }
+  });
+})();
+</script>
+</body>
+</html>
